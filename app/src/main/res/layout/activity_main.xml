@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="24dp"
+    android:background="#F4FBF8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/beatsaver_logo"
+        android:contentDescription="Beat.Saver Logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#CCCCCC"
+        android:layout_marginBottom="8dp"/>
+    <!-- Title -->
+    <!-- Title -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공황장애 "
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자가 진단"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/main_title"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="의학적으로 공인된 2가지 설문조사와 심박변이도를 측정을 통해\n과학적인 진단이 가능합니다."
+        android:textColor="#757575"
+        android:layout_gravity="center_horizontal"
+
+        android:textSize="11sp"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Progress Steps Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- Step 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_background"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ECG 입력"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Step 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_background"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공황관련 2가지 설문조사 응답"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Step 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_background"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공황장애 예측 진단 결과 확인"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <!-- Step 4 -->
+
+
+    </LinearLayout>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작"
+        android:textStyle="bold"
+        android:backgroundTint="#5F8D80"
+        android:layout_marginTop="16dp"/>
+    <!--    <Button-->
+    <!--        android:id="@+id/startButton"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="시작하기"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:padding="16dp"-->
+    <!--        android:background="@drawable/button_background"-->
+    <!--        android:textColor="#FFFFFF"/>-->
+    </LinearLayout>
+
+</LinearLayout>
